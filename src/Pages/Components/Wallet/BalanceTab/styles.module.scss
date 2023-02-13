@@ -1,0 +1,85 @@
+.holdingCard {
+    border: 1px solid #B8B8B8;
+    border-radius: 13px;
+    max-width: 360px;
+    width: 100%;
+    margin: 32px 0;
+
+    @media screen and (max-width: 1200px) {
+        width: 28%;
+    }
+
+    @media screen and (max-width: 992px) {
+        width: 30%;
+    }
+
+    @media screen and (max-width: 850px) {
+        width: 50%;
+    }
+    @media screen and (max-width: 576px) {
+        min-width: 100%;
+    }
+
+    .topRow {
+        padding: 24px 30px 0 30px;
+        border-bottom: 1px solid #B8B8B8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+
+        .directionColumn {
+            display: flex;
+            flex-direction: column;
+
+            .icon {
+                height: 45px;
+                width: 45px;
+                margin-bottom: 14px;
+            }
+
+            .txt {
+                color: #777777;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .bottmRow {
+        padding: 40px 10px 50px 30px;
+
+        .amount {
+            color: #353535;
+            font-size: 32px;
+            font-weight: 700;
+
+            @media screen and (max-width: 1200px) {
+                font-size: 30px;
+            }
+        }
+
+        .price {
+            color: #777777;
+            font-size: 18px;
+            font-weight: 500;
+            margin-left: 8px;
+        }
+    }
+}
+
+.cardContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+
+    @media screen and (max-width: 850px) {
+        flex-wrap: wrap;
+        row-gap: 32px;
+    }
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}

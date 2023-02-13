@@ -1,0 +1,205 @@
+.wrap {
+  margin-top: 78px;
+
+  @media screen and (max-width: 576px) {
+    margin-top: 40px;
+  }
+
+  .headerWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    .heading {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .btnWrap {
+      display: flex;
+      column-gap: 16px;
+
+      button {
+        padding: 6px 16px;
+        background-color: #f9f9f9;
+        border: 1px solid #dde1ed;
+        font-size: 12px;
+        font-weight: 600;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .tableWrap {
+    margin-top: 25px;
+    overflow-x: auto;
+
+    @media screen and (max-width: 576px) {}
+
+    table {
+      width: 100%;
+      min-width: 950px;
+
+      tbody {
+        tr:nth-child(even) {
+          background-color: #f9f9f9;
+          border-radius: 4px;
+        }
+
+        tr {
+          td:nth-child(3) {
+            vertical-align: bottom;
+          }
+
+          .col1 {
+            display: flex;
+            padding: 20px;
+
+            .userImg {
+              object-fit: cover;
+              cursor: pointer;
+              max-width: 48px;
+              width: 100%;
+              border-radius: 4px;
+            }
+
+            .name_date {
+              display: flex;
+              flex-direction: column;
+              margin-left: 23px;
+              justify-content: space-between;
+
+              .name {
+                font-size: 16px;
+                font-weight: 600;
+
+                @media screen and (max-width: 576px) {
+                  font-size: 14px;
+                }
+              }
+
+              .date {
+                font-size: 14px;
+
+                @media screen and (max-width: 576px) {
+                  font-size: 12px;
+                }
+              }
+            }
+
+            .imp {
+              align-self: flex-end;
+              margin-left: 15px;
+            }
+          }
+
+          .col2 {
+            padding: 16px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .title_cur_amount {
+              display: flex;
+              column-gap: 48px;
+              align-items: center;
+              margin-bottom: 16px;
+
+              .title {
+                font-size: 16px;
+                font-weight: 600;
+
+                @media screen and (max-width: 576px) {
+                  font-size: 14px;
+                }
+              }
+
+              .cur_amount {
+                display: flex;
+                column-gap: 27px;
+
+                @media screen and (max-width: 576px) {
+                  column-gap: 20px;
+                }
+
+                .cur {
+                  font-size: 16px;
+                  font-weight: 500;
+                  padding: 5px 9px;
+                  background-color: #f9f9f9;
+                  border-radius: 4px;
+
+                  @media screen and (max-width: 576px) {
+                    font-size: 14px;
+                  }
+                }
+
+                .amount {
+                  border: 1px solid #ffc90b;
+                  font-size: 16px;
+                  font-weight: 500;
+                  border-radius: 4px;
+                  padding: 5px 9px;
+
+                  @media screen and (max-width: 576px) {
+                    font-size: 14px;
+                  }
+                }
+              }
+            }
+          }
+
+          .col3 {
+            padding: 16px 20px;
+            display: flex;
+            align-items: flex-end;
+
+            .link {
+              color: #0278db;
+              font-size: 16px;
+              font-weight: 500;
+              text-decoration: underline;
+              text-underline-offset: 2px;
+              cursor: pointer;
+              @media screen and (max-width: 1400px) {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+      }
+
+
+    }
+
+    .more {
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: underline;
+      margin-top: 24px;
+      cursor: pointer;
+      text-underline-offset: 2px;
+      text-decoration-thickness: 1px;
+      margin-bottom: 20px;
+      @media screen and (max-width: 576px) {
+        font-size: 12px;
+      }
+    }
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 12px;
+  }
+}
+
+.loader {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}

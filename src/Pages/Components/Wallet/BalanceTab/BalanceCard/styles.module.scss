@@ -1,0 +1,132 @@
+.balaceCard {
+    border: 1px solid #B8B8B8;
+    border-radius: 13px;
+    width: 33.33%;
+
+    @media screen and (max-width: 850px) {
+        min-width: 100%;
+    }
+
+    .topRow {
+        padding: 20px 30px 10px 30px;
+        border-bottom: 1px solid #B8B8B8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+
+        @media screen and (max-width: 1200px) {
+            padding: 20px 15px 10px 15px;
+        }
+
+        .directionColumn {
+            display: flex;
+            flex-direction: column;
+
+            .icon {
+                height: 45px;
+                width: 45px;
+                margin-bottom: 10px;
+            }
+
+            .txt {
+                color: #353535;
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .bottmRow {
+        padding: 40px 30px;
+
+        @media screen and (max-width: 1200px) {
+            padding: 40px 20px;
+        }
+
+        .alignment {
+            display: flex;
+            justify-content: space-between;
+
+            .amount {
+                color: #353535;
+                font-size: 32px;
+                font-weight: 700;
+                margin: 5px 0;
+
+                @media screen and (max-width: 1200px) {
+                    font-size: 28px;
+                }
+            }
+
+            .balanceTxt {
+                color: #777777;
+                font-size: 18px;
+                font-weight: 500;
+
+                @media screen and (max-width: 1200px) {
+                    font-size: 14px;
+                }
+            }
+
+            .marketPrice {
+                color: #777777;
+                font-size: 16px;
+                font-weight: 700;
+                margin-top: 5px;
+            }
+
+            .priceContainer {
+                display: flex;
+                align-items: center;
+
+                .tildaIcon {
+                    margin-right: 8px;
+                }
+
+            }
+        }
+
+        .btnContainer {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            column-gap: 10px;
+
+            .btnOutline {
+                height: 48px;
+                max-width: 170px;
+                width: 100%;
+                border: 1px solid #1FC28F;
+                border-radius: 7px;
+                @media screen and (max-width: 850px) {
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+    }
+
+    .menu {
+        padding: 10px 0;
+        min-width: 190px;
+
+        .dropdown {
+            display: flex;
+            align-items: center;
+            padding: 8px 15px;
+
+            span {
+                display: inline-block;
+                margin-left: 15px;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+
+}

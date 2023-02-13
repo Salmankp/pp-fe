@@ -1,0 +1,119 @@
+.wrap {
+    margin: 50px 0;
+
+    .title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    .description {
+        font-size: 20px;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+
+    .link {
+        color: #0278db;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .mgTop {
+        margin-top: 30px;
+    }
+
+    .cardsCOntainer {
+        margin: 20px 0 50px 0;
+        display: flex;
+        column-gap: 30px;
+
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+
+        .card {
+            border: 1px solid #B8B8B8;
+            border-radius: 13px;
+            padding: 40px;
+            max-width: 485px;
+            width: 100%;
+
+            @media screen and (max-width: 768px) {
+                max-width: 100%;
+            }
+            @media screen and (max-width: 567px) {
+                padding: 20px 15px;
+            }
+
+            .title {
+                font-size: 16px;
+                font-weight: 700;
+                margin-left: 10px;
+            }
+        }
+
+        .details {
+            padding: 26px 0 35px 0;
+            border-bottom: 1px solid #DDDDDD;
+
+            .bottom {
+                margin-bottom: 10px;
+
+                .txt {
+                    font-size: 16px;
+                    margin-left: 20px;
+                }
+
+                .infoIcon {
+                    display: inline-block;
+                    margin-left: 20px;
+                }
+            }
+
+        }
+
+        .bottomRow {
+            margin: 10px 0 0 0;
+
+            .alignment {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 14px;
+
+                .txt {
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-right: 10px;
+                }
+
+                .counter {
+                    margin: 0;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+
+                .blueTxt {
+                    color: #0278db;
+                }
+
+                .mgBottom {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .bgColor {
+            background-color: #f9f9f9;
+        }
+    }
+}

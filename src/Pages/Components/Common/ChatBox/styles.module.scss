@@ -1,0 +1,132 @@
+.wrap {
+  max-width: 700px;
+  width: 100%;
+  background-color: #F9F9F9;
+  border: 1px solid #EDEDED;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+
+  @media screen and (max-width: 992px) {
+    min-width: 100%;
+  }
+
+  .header {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    padding: 10px 20px;
+    width: 100%;
+    background: #E7E7E7;
+
+    @media screen and (max-width: 576px) {
+      font-size: 16px;
+    }
+
+    img {
+      max-width: 50px;
+      width: 100%;
+      margin-right: 15px;
+      border-radius: 4px;
+    }
+  }
+
+  .chatContainer {
+    padding: 20px;
+    height: 400px;
+    overflow-y: scroll;
+
+    .preChatWrap {
+      margin-top: 16px;
+
+      .dayTime {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 16px;
+      }
+
+      .msgWrap {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        overflow-y: auto;
+
+        .receiveMsg {
+          border: 1px solid #ededed;
+          padding: 9px 18px;
+          border-radius: 4px;
+          font-size: 16px;
+          background-color: white;
+          max-width: 90%;
+          padding-right: 70px;
+
+          @media screen and (max-width: 576px) {
+            font-size: 12px;
+          }
+        }
+
+        .sendMsg {
+          border: 1px solid #ededed;
+          padding: 9px 18px;
+          border-radius: 4px;
+          font-size: 16px;
+          align-self: flex-end;
+          background: #dde1ed;
+          max-width: 90%;
+          padding-left: 70px;
+
+          @media screen and (max-width: 576px) {
+            font-size: 12px;
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .txtContainer {
+    background-color: #fff;
+    border-radius: 4px;
+
+    .bottomRow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+
+      .alignment {
+        display: contents;
+        width: 100%;
+
+        .inputField {
+          border: none;
+          outline: 0;
+          height: 40px;
+          width: 90%;
+          font-size: 16px;
+
+          @media screen and (max-width: 576px) {
+            font-size: 12px;
+          }
+
+          &::placeholder {
+            color: #A39999;
+          }
+        }
+
+        .uploadIcon {
+          height: 30px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+  }
+}

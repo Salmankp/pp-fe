@@ -1,0 +1,100 @@
+.wrap {
+    width: 70%;
+    padding-left: 32px;
+
+    @media screen and (max-width: 992px) {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .title {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 14px;
+
+        @media screen and (max-width: 576px) {
+            font-size: 26px;
+        }
+    }
+
+    .description {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 576px) {
+            font-size: 12px;
+        }
+    }
+
+    .fieldWrap {
+        margin-bottom: 25px;
+        max-width: 570px;
+        width: 100%;
+        @media screen and (max-width: 576px) {
+            max-width: 100%;
+            margin-bottom: 0;
+        }
+
+        .label {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+
+        .field {
+            position: relative;
+            margin-bottom: 24px;
+            select {
+                padding: 14px 10px;
+                border: 1px solid #ededed;
+                border-radius: 4px;
+                font-size: 14px;
+                font-weight: 400;
+                background: url('../../../../assets/images/arrowDownIcon.svg') no-repeat right #f9f9f9;
+                background-position: calc(100% - 1.2rem) center !important;
+                -moz-appearance: none !important;
+                -webkit-appearance: none !important;
+                appearance: none !important;
+                padding-right: 3rem;
+                width: 100%;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .answerInput {
+            background: #F9F9F9;
+            border: 1px solid #EDEDED;
+            border-radius: 4px;
+            padding: 20px;
+            height: 48px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    .saveBtn {
+        background-color: #1FC28F;
+        border: 1px solid #1FC28F;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        align-items: center;
+        height: 34px;
+        max-width: 70px;
+        width: 100%;
+        border-radius: 7px;
+        &:disabled{
+            background-color: gray;
+        }
+        @media screen and (max-width: 576px) {
+            font-size: 14px;
+        }
+    }
+}

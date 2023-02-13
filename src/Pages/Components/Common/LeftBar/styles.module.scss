@@ -1,0 +1,236 @@
+.wrap {
+  position: sticky;
+  top: 72px;
+  align-self: flex-start;
+  max-width: 365px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 35px 15px 35px 50px;
+
+  @media screen and (max-width: 1600px) {
+    max-width: 320px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    padding: 35px 15px 35px 30px;
+  }
+
+  @media screen and (max-width: 992px) {
+    min-width: 100%;
+    position: inherit;
+  }
+
+  .fieldWrap {
+    margin-bottom: 25px;
+
+    .label {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .field {
+      position: relative;
+
+      select {
+        padding: 14px 10px;
+        border: 1px solid #ededed;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 400;
+        background: url('../../../../assets/images/arrowDownIcon.svg') no-repeat right #f9f9f9;
+        background-position: calc(100% - 1.2rem) center !important;
+        -moz-appearance: none !important;
+        -webkit-appearance: none !important;
+        appearance: none !important;
+        padding-right: 3rem;
+        width: 100%;
+      }
+
+      input {
+        padding: 14px 10px;
+        border: 1px solid #ededed;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 400;
+        width: 100%;
+        background-color: #f9f9f9;
+        box-sizing: border-box;
+      }
+
+      .subtext {
+        margin-top: 8px;
+        font-size: 14px;
+
+        .green {
+          color: #1fc28f;
+        }
+
+        img {
+          margin-left: 3px;
+        }
+      }
+
+      .hamBtn {
+        background-color: white;
+        border: 0px;
+        height: 32px;
+        width: 32px;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 8px;
+      }
+
+      .currencyBtn {
+        background-color: white;
+        border: 0px;
+        height: 32px;
+        padding: 0px 12px;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 8px;
+        display: flex;
+
+        img {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .offers {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 14px;
+
+      .text {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .offerBtn {
+    margin-top: 70px;
+    font-size: 18px;
+    font-weight: 600;
+    height: 48px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #1fc28f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    @media screen and (max-width: 992px) {
+      width: 50%;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+  }
+
+  .offerWrap {
+    padding: 24px 20px 0 0;
+
+    .offers {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0;
+      }
+
+      img {
+        cursor: pointer;
+      }
+    }
+
+    .outer {
+      margin: 5px 0 30px 0;
+
+      .checkboxContainer {
+        margin-bottom: 10px;
+
+        .checkbox {
+          cursor: pointer;
+          height: 20px;
+          width: 20px;
+          border: 1px solid #CACACA;
+          border-radius: 50%;
+          vertical-align: middle;
+          display: inline-block;
+          border-radius: 10px;
+        }
+
+        .checkboxTxt {
+          font-size: 16px;
+          font-weight: 400;
+          display: inline-block;
+          margin-left: 10px;
+          vertical-align: middle;
+        }
+      }
+    }
+
+
+  }
+
+  :global {
+    .accordion-item {
+      border: none;
+    }
+
+    .accordion-header {
+      .accordion-button {
+        cursor: pointer;
+        padding: 14px 0;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #353535;
+        background: #fff;
+        box-shadow: none;
+
+        &::after {
+          background-image: none;
+          content: url('../../../../assets/images/arrowDownIcon.svg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+
+      .accordion-button:not(.collapsed) {
+        cursor: pointer;
+        padding: 14px 0;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #353535;
+        box-shadow: none;
+      }
+    }
+
+    .accordion-body {
+      padding: 0;
+    }
+
+  }
+}

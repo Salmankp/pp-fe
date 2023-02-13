@@ -1,0 +1,84 @@
+.tableWrapper{
+    .title{
+       gap: 10px;
+    }
+    .tableHead{
+        th{
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+    .bodyRow{
+        .userImg{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        td{
+            font-size: 14px;
+        }
+        .notVerified{
+            font-size: 12px;
+        }
+    }
+    .alignment {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            margin-bottom: 20px;
+        }
+
+        .txt {
+            color: #7B7B7B;
+            font-size: 20px;
+            font-weight: 500;
+
+            @media screen and (max-width: 992px) {
+                font-size: 16px;
+            }
+            @media screen and (max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+    }
+}
+.filterWrapper{
+    position: relative;
+    .filterHead{
+        border: 1px solid #DEDEDE;
+        padding: 15px;
+        cursor: pointer;
+        user-select: none;
+    }
+    .listWrapper{
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(117, 117, 117, 0.25);
+        border-radius: 4px;
+        position: absolute;
+        top: 55px;
+        right: 0px;
+        width: 300px;
+        z-index:1000;
+        .listItem{
+            list-style: none;
+            li{
+                font-size: 16px;
+                cursor: pointer;
+                user-select: none;
+            }
+        }
+    }
+}
+
+.loader {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+

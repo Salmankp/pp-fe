@@ -1,0 +1,143 @@
+.wrap {
+  background-color: #fafafa;
+
+  .navbar {
+    padding: 20px 50px;
+    border-bottom: 1px solid #d2d2d2;
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1400px) {
+      padding: 20px 30px;
+    }
+
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
+
+    .nav {
+      display: flex;
+      column-gap: 12px;
+      flex-wrap: wrap;
+      row-gap: 5px;
+
+      @media screen and (max-width: 992px) {
+        margin-bottom: 20px;
+      }
+
+      .link {
+        font-size: 16px;
+        color: #353535;
+        text-decoration: none;
+        &:hover{
+          color: #1fc28f;
+        }
+
+        @media screen and (max-width: 576px) {
+          font-size: 12px;
+        }
+      }
+
+      .heading {
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+
+    .langWrap {
+      font-size: 16px;
+      font-weight: 500;
+      column-gap: 10px;
+      display: flex;
+      align-items: center;
+      flex: 0 0 auto;
+
+      .link {
+        text-decoration: none;
+        color: #353535;
+
+        @media screen and (max-width: 576px) {
+          font-size: 14px;
+        }
+      }
+
+      .seprator {
+        background-color: #7b7b7b;
+        height: 28px;
+        width: 1px;
+      }
+
+      .lang {
+        cursor: pointer;
+
+        span {
+          margin-right: 10px;
+          margin-left: 5px;
+
+          @media screen and (max-width: 576px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .logoWrap {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1400px) {
+      padding: 20px 30px;
+    }
+
+    .logo_name {
+      display: flex;
+      color: #3c48fa;
+      align-items: center;
+      column-gap: 10px;
+
+      @media screen and (max-width: 576px) {
+        column-gap: 5px;
+      }
+
+      .logo {
+        img {
+          width: 44px;
+
+          @media screen and (max-width: 576px) {
+            width: 30px;
+          }
+        }
+      }
+
+      .name {
+        font-size: 32px;
+        font-weight: 700;
+
+        @media screen and (max-width: 576px) {
+          font-size: 24px;
+        }
+      }
+    }
+    .socialMedia {
+      border-radius: 8px;
+      background-color: white;
+      padding: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 20px;
+
+      a {
+        font-size: 0px;
+      }
+    }
+  }
+  .activeLink{
+    color: #1fc28f !important;
+  }
+}

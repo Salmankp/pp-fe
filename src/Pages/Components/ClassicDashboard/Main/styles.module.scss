@@ -1,0 +1,58 @@
+.wrap {
+    .heading {
+        font-weight: 600;
+        margin: 45px 0 20px 0;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 32px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+    }
+
+    .userContainer {
+        padding: 45px 0px;
+        display: flex;
+        column-gap: 40px;
+
+        @media screen and (max-width: 992px) {
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width: 567px) {
+            padding-bottom: 0;
+        }
+    }
+
+    .userProfile {
+        width: calc(100% - 380px);
+    }
+
+    .offerContainer {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -40px;
+
+        @media screen and (max-width: 567px) {
+            justify-content: center;
+        }
+
+        .offerBtn {
+            height: 48px;
+            border: 1px solid #1FC28F;
+            border-radius: 7px;
+            max-width: 240px;
+            width: 100%;
+
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+                height: 40px;
+                max-width: 200px;
+            }
+        }
+    }
+
+}

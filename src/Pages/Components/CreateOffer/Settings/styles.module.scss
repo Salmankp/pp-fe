@@ -1,0 +1,278 @@
+.wrap {
+  .fieldWrap {
+    display: flex;
+    flex-direction: column;
+    column-gap: 30px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+
+    .field {
+      font-size: 14px;
+      position: relative;
+      .required {
+        color: red;
+        font-size: 12px;
+        
+      }
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+
+      .heading {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 18px;
+
+        @media screen and (max-width: 992px) {
+          font-size: 16px;
+        }
+      }
+      .lowerHeading {
+        margin-top: 15px;
+      }
+      .inputTxt {
+        @media screen and (max-width: 992px) {
+          font-size: 12px;
+        }
+
+        @media screen and (max-width: 576px) {
+          font-size: 10px;
+        }
+      }
+
+      .inputwrap {
+        position: relative;
+
+        .inputTxt {
+          @media screen and (max-width: 992px) {
+            font-size: 12px;
+          }
+
+          @media screen and (max-width: 576px) {
+            font-size: 10px;
+          }
+        }
+
+        button {
+          position: absolute;
+          border: 0px;
+          background-color: white;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          padding: 6px 7px;
+          border-radius: 4px;
+
+          @media screen and (max-width: 992px) {
+            font-size: 12px;
+          }
+        }
+      }
+
+      & > input,
+      .inputwrap > input {
+        padding: 0px 16px;
+        border: 1px solid #ededed;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 400;
+        width: 100%;
+        background-color: #f9f9f9;
+        box-sizing: border-box;
+        height: 48px;
+      }
+
+      textarea {
+        padding: 14px 16px;
+        border: 1px solid #ededed;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 400;
+        width: 100%;
+        background-color: #f9f9f9;
+        box-sizing: border-box;
+        height: 48px;
+        min-height: 56px;
+        margin-top: 10px;
+      }
+
+      .radio {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        @media screen and (max-width: 992px) {
+          font-size: 12px;
+        }
+
+        input {
+          display: none;
+        }
+
+        input:checked ~ label {
+          .circle {
+            position: relative;
+            background-color: #1fc28f;
+
+            &::before {
+              content: "";
+              width: 7px;
+              height: 7px;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-color: white;
+              border-radius: 50%;
+            }
+          }
+        }
+
+        label {
+          display: flex;
+          cursor: pointer;
+
+          .circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid #1fc28f;
+            margin-right: 15px;
+          }
+        }
+      }
+
+      .text {
+        font-size: 14px;
+        color: #7b7b7b;
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 992px) {
+          font-size: 11px;
+        }
+
+        @media screen and (max-width: 576px) {
+          display: block;
+        }
+
+        .link {
+          color: #0094ff;
+          text-decoration: underline;
+          text-underline-offset: 2px;
+          cursor: pointer;
+
+          @media screen and (max-width: 576px) {
+            margin-top: 5px;
+          }
+        }
+      }
+      .isDisabled {
+        pointer-events: none;
+        opacity: 0.4;
+      }
+      .verify {
+        font-size: 14px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 992px) {
+          font-size: 12px;
+        }
+
+        label {
+          cursor: pointer;
+        }
+
+        input {
+          margin-right: 10px;
+          width: 16px;
+          height: 16px;
+          border: 1px solid #c4c4c4;
+        }
+      }
+
+      .content {
+        p {
+          margin-bottom: 10px;
+
+          @media screen and (max-width: 992px) {
+            font-size: 12px;
+          }
+        }
+
+        .link {
+          color: #0094ff;
+          text-decoration: underline;
+          text-underline-offset: 2px;
+          cursor: pointer;
+
+          @media screen and (max-width: 992px) {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .switchWrap {
+        margin-top: 10px;
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+      }
+
+      .selectWrap {
+        margin-top: 40px;
+        display: flex;
+        column-gap: 25px;
+
+        @media screen and (max-width: 1000px) {
+          display: block;
+        }
+
+        .select {
+          .heading {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: 1000px) {
+              margin-top: 10px;
+            }
+          }
+        }
+
+        .selects {
+          display: flex;
+          column-gap: 10px;
+
+          @media screen and (max-width: 1000px) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .advance_heading {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 992px) {
+      font-size: 26px;
+    }
+  }
+
+  :global {
+    #react-select-3-placeholder {
+      font-size: 12px;
+    }
+  }
+}

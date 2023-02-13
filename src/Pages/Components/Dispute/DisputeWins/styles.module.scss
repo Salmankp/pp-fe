@@ -1,0 +1,217 @@
+.wrap {
+    border-right: 1px solid #dedede;
+    margin-right: 32px;
+    max-width: 620px;
+    width: 100%;
+
+    @media screen and (max-width: 992px) {
+        max-width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #dedede;
+        margin-bottom: 70px;
+        margin-right: 0;
+        padding-bottom: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-bottom: 0;
+        margin-bottom: 30px;
+    }
+
+    .heading {
+        margin-bottom: 20px;
+    }
+
+    .paymentBlock {
+        margin-right: 32px;
+
+        @media screen and (max-width: 992px) {
+            margin-right: 0;
+        }
+
+        .paymentHeadingBlock {
+            background-color: #f9f9f9;
+            border: 1px solid #ededed;
+            border-radius: 4px;
+            padding: 20px;
+            margin-bottom: 30px;
+
+            .title {
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 30px;
+                margin: 0;
+
+                @media screen and (max-width: 1200px) {
+                    font-size: 20px;
+                }
+
+                @media screen and (max-width: 567px) {
+                    font-size: 18px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    font-size: 16px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    .btnContainer {
+        margin-bottom: 40px;
+
+        button {
+            height: 48px;
+            width: 127px;
+
+            @media screen and (max-width: 455px) {
+                width: 90px;
+                height: 40px;
+            }
+        }
+
+        .likeBtn {
+            background: rgba(31, 222, 0, 0.1);
+            border-radius: 4px;
+            margin-right: 10px;
+
+            span {
+                color: #1FDE00;
+                display: inline-block;
+                margin-left: 12px;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        .neutralBtn {
+            background: rgba(123, 123, 123, 0.17);
+            border-radius: 4px;
+            color: #7B7B7B;
+            font-size: 16px;
+            font-weight: 400;
+            margin-right: 10px;
+        }
+
+        .dislikeBtn {
+            background: rgba(243, 9, 9, 0.1);
+            border-radius: 4px;
+            margin-right: 10px;
+
+            span {
+                color: #F30909;
+                display: inline-block;
+                margin-left: 12px;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+    }
+
+    .txtArea {
+        width: 95%;
+        background-color: #fff;
+        border: 1px solid #EDEDED;
+        border-radius: 4px;
+        padding: 14px 0 0 14px;
+        margin-bottom: 15px;
+
+        @media screen and (max-width: 992px) {
+            width: 100%;
+        }
+    }
+
+    .feedBackBtn {
+        height: 48px;
+        min-width: 170px;
+        border: 1px solid #1FC28F;
+        border-radius: 7px;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+
+        @media screen and (max-width: 576px) {
+            font-size: 14px;
+            height: 45px;
+            min-width: 150px;
+        }
+    }
+
+    .socialBtn {
+        margin-top: 50px;
+
+        .title {
+            font-size: 24px;
+            font-weight: 500;
+
+            @media screen and (max-width: 576px) {
+                font-size: 20px;
+            }
+        }
+
+        .btnContainer {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            @media screen and (max-width: 576px) {
+                flex-direction: column;
+                row-gap: 10px;
+            }
+
+            a {
+                height: 48px;
+                padding: 14px 12px;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: 4px;
+
+                .btnTxt {
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+
+            .twitterBtn {
+                background-color: #03A9F4;
+                margin-right: 20px;
+                min-width: 210px;
+
+                @media screen and (max-width: 576px) {
+                    min-width: 100%;
+                    margin-right: 0;
+                }
+
+                .alignment {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+
+            .fbBtn {
+                background-color: #475993;
+                width: 230px;
+
+                @media screen and (max-width: 576px) {
+                    min-width: 100%;
+                }
+
+                .alignment {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+            }
+
+            .fbImg {
+                border-radius: 50%;
+                height: 20px;
+            }
+        }
+
+    }
+}

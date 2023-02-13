@@ -1,0 +1,17 @@
+.exportModalWrapper{
+    .dateRangeWrapper{
+        :global{
+            .rdrDefinedRangesWrapper{
+                display: none !important;
+            }
+        }
+    }
+}
+.radioBtnWrapper{
+    :global{
+        .form-check-label{
+            position: relative;
+            top: 2px;
+        }
+    }
+}

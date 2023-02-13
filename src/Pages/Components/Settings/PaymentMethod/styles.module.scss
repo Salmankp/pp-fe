@@ -1,0 +1,265 @@
+.wrap {
+    width: 70%;
+    padding: 0 0 0 32px;
+
+    @media screen and (max-width: 992px) {
+        width: 100%;
+        padding: 0;
+    }
+
+    .heading {
+        font-weight: 600;
+        margin-bottom: 10px;
+        font-size: 32px;
+
+        @media screen and (max-width: 992px) {
+            font-size: 26px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 18px;
+        }
+    }
+
+    .description {
+        color: #2C2C2C;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 992px) {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 12px;
+        }
+    }
+
+    .subtitle {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 25px;
+
+        @media screen and (max-width: 992px) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 14px;
+        }
+    }
+
+    .main {
+        .txt {
+            font-size: 16px;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: 992px) {
+                font-size: 16px;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+
+        .accWrap {
+            display: flex;
+            justify-content: space-around;
+            background: #f9f9f9;
+            border: 1px solid #ededed;
+            border-radius: 4px;
+            padding: 33px;
+            max-width: 555px;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 768px) {
+                max-width: 100%;
+            }
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+
+            .txt {
+                font-size: 18px;
+                font-weight: 600;
+                margin: 15px 0 0 0;
+                text-align: center;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 14px;
+                }
+            }
+
+            .outer {
+                height: 90px;
+                width: 165px;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            .outer.active {
+                border: 1px solid #1fc28f;
+                background-color: white;
+
+                .icon {
+                    path {
+                        fill: #1FC28F;
+                    }
+                }
+            }
+        }
+
+        .icon {
+            path {
+                fill: #7B7B7B
+            }
+        }
+
+        .fieldWrap {
+            margin-bottom: 25px;
+            max-width: 555px;
+
+            @media screen and (max-width: 768px) {
+                max-width: 100%;
+            }
+
+            .label {
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 10px;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 14px;
+                }
+            }
+
+            .field {
+                position: relative;
+
+                select {
+                    padding: 14px 10px;
+                    border: 1px solid #ededed;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    background: url('../../../../assets/images/arrowDownIcon.svg') no-repeat right #f9f9f9;
+                    background-position: calc(100% - 1.2rem) center !important;
+                    -moz-appearance: none !important;
+                    -webkit-appearance: none !important;
+                    appearance: none !important;
+                    padding-right: 3rem;
+                    width: 100%;
+
+                    @media screen and (max-width: 576px) {
+                        font-size: 12px;
+                    }
+                }
+
+                input {
+                    padding: 14px 10px;
+                    border: 1px solid #ededed;
+                    border-radius: 4px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    width: 100%;
+                    background-color: #f9f9f9;
+                    box-sizing: border-box;
+                }
+
+            }
+        }
+
+        .btn {
+            height: 48px;
+            max-width: 160px;
+            width: 100%;
+            background: #1FC28F;
+            border-radius: 7px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 500;
+
+            @media screen and (max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+
+        .wallet {
+            margin: 70px 0 0 0;
+
+            .title {
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 10px;
+
+                @media screen and (max-width: 992px) {
+                    font-size: 20px;
+                }
+
+                @media screen and (max-width: 576px) {
+                    font-size: 16px;
+                }
+            }
+
+            .walletContainer {
+                border: 1px solid #B8B8B8;
+                border-radius: 9px;
+                padding: 20px;
+
+                .subheading {
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-bottom: 15px;
+
+                    @media screen and (max-width: 576px) {
+                        font-size: 14px;
+                    }
+                }
+
+                .newbtn {
+                    padding: 0;
+                    color: #0278DB;
+                    text-decoration: underline;
+                    text-underline-offset: 2px;
+                    font-size: 16px;
+                    font-weight: 600;
+
+                    @media screen and (max-width: 576px) {
+                        font-size: 14px;
+                    }
+                }
+
+                .noRecord {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+                    .txt {
+                        margin-top: 20px;
+                        display: block;
+                        font-size: 20px;
+                        font-weight: 500;
+
+                        @media screen and (max-width: 576px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

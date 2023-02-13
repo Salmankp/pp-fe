@@ -1,0 +1,57 @@
+.wrap {
+  padding: 50px 50px;
+  .title {
+    padding-left: 1rem;
+  }
+  .flexWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+    .boxWrapTrade {
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: initial;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 4px;
+      padding: 1.5rem 11rem 1.5rem 1.5rem;
+      height: 300px;
+      @media screen and (max-width: 1348px) {
+        padding: 1.5rem 4rem 1.5rem 1.5rem;
+      }
+      @media screen and (max-width: 991px) {
+        width: 100%;
+        height: auto;
+      }
+      .boxHead {
+        color: #848484;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 600;
+      }
+      .token {
+        display: flex;
+        flex-direction: column;
+        padding: 12px 0px;
+        span {
+          font-size: 24px;
+          font-weight: 700;
+          color: #1fc28f;
+          padding: 5px 0px;
+        }
+      }
+      .sold {
+        font-size: 0.875rem;
+        line-height: 20px;
+        font-weight: 500;
+      }
+      .stats {
+        font-size: 0.875rem;
+        line-height: 20px;
+        color: #848484;
+      }
+    }
+  }
+}

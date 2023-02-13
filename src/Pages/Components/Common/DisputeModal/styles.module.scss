@@ -1,0 +1,150 @@
+.dispute_modal {
+    :global {
+        .modal-dialog {
+            max-width: 720px;
+            width: 100%;
+
+            @media screen and (max-width: 768px) {
+                max-width: 500px;
+            }
+
+            @media screen and (max-width: 576px) {
+                max-width: 400px;
+            }
+
+            @media screen and (max-width: 400px) {
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .modal-content {
+            border-radius: 20px;
+        }
+
+        .modal-body {
+            padding: 0px;
+        }
+    }
+
+    .wrap {
+        padding: 35px 50px 60px 50px;
+
+        @media screen and (max-width: 768px) {
+            padding: 30px;
+        }
+
+        .cross {
+            position: absolute;
+            top: 32px;
+            right: 32px;
+            cursor: pointer;
+        }
+
+        .heading {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 400px) {
+                font-size: 14px;
+            }
+        }
+
+        .txt {
+            font-size: 16px;
+            font-weight: 400;
+            margin: 25px 0;
+            line-height: 20px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 12px;
+            }
+        }
+
+        .subHeading {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+
+        .outerSpance {
+            margin-bottom: 10px;
+        }
+
+        .txtArea {
+            display: block;
+            width: 100%;
+            background-color: #F9F9F9;
+            border: 1px solid #EDEDED;
+            border-radius: 4px;
+            padding: 14px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 12px;
+            }
+        }
+
+        .subInfo {
+            color: #7B7B7B;
+            font-size: 14px;
+            font-weight: 400;
+
+            @media screen and (max-width: 576px) {
+                font-size: 12px;
+            }
+        }
+
+        .btnContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 70px;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                row-gap: 10px;
+            }
+
+            .btn_close {
+                height: 48px;
+                min-width: 275px;
+                background-color: #DDDDDD;
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: 400;
+
+                @media screen and (max-width: 768px) {
+                    min-width: 100%;
+                }
+            }
+
+            .btn_start {
+                height: 48px;
+                min-width: 275px;
+                background-color: #52D1AC;
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: 400;
+
+                @media screen and (max-width: 768px) {
+                    min-width: 100%;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,25 @@
+.wrap {
+    padding: 60px 0;
+
+    .heading {
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 1400px) {
+            font-size: 32px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 26px;
+        }
+    }
+
+    .outer {
+        width: 100%;
+        display: flex;
+
+        @media screen and (max-width: 992px) {
+            flex-wrap: wrap;
+        }
+    }
+
+}

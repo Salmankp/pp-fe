@@ -1,0 +1,67 @@
+.wrap {
+    border: 1px solid #B8B8B8;
+    border-radius: 13px;
+    padding: 24px;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 576px) {
+        padding: 20px 10px;
+    }
+
+    .alignment {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 34px;
+        @media screen and (max-width: 576px) {
+            flex-direction: column-reverse;
+            row-gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .heading {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0;
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 12px;
+            }
+        }
+
+        .description {
+            font-size: 16px;
+            font-weight: 500;
+            margin: 0;
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 12px;
+            }
+
+            .link {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .bottomContainer {
+        background-color: #f9f9f9;
+        padding: 5px 24px;
+
+        .msg {
+            font-size: 14px;
+            font-weight: 400;
+
+            @media screen and (max-width: 576px) {
+                font-size: 12px;
+            }
+        }
+    }
+}

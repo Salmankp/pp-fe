@@ -1,0 +1,5 @@
+export const FILTER_TRADE_REQUEST = 'FILTER_TRADE_REQUEST'
+export const FILTER_TRADE_SUCCESS = 'FILTER_TRADE_SUCCESS'
+export const FILTER_TRADE_FAIL = 'FILTER_TRADE_FAIL'
+
+export const Trade_PAGE = 'Trade_PAGE'

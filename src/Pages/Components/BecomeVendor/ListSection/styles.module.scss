@@ -1,0 +1,51 @@
+.wrap {
+    padding-top: 150px;
+
+    @media screen and (max-width: 1200px) {
+        padding-top: 80px;
+    }
+
+    .listOuter {
+        background: #F8F8F8;
+        border-radius: 10px;
+        padding: 25px 40px;
+        display: flex;
+        min-height: 125px;
+
+        @media screen and (max-width: 1400px) {
+            padding: 20px 10px 10px 10px;
+            min-height: 110px;
+        }
+
+        @media screen and (max-width: 992px) {
+            padding: 15px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+
+        img {
+            align-self: flex-start;
+
+            @media screen and (max-width: 992px) {
+                align-self: center;
+            }
+        }
+
+        .txt {
+            color: #2C2C2C;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 0 0 0 15px;
+            line-height: 20px;
+
+            @media screen and (max-width: 1200px) {
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 992px) {
+                font-size: 12px;
+                margin: 0 0 0 10px;
+            }
+        }
+    }
+}

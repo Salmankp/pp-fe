@@ -1,0 +1,167 @@
+.wrap {
+    margin-bottom: 70px;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+
+        @media screen and (max-width: 992px) {
+            font-size: 18px !important;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 16px !important;
+        }
+    }
+
+    .description {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 15px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 12px;
+        }
+    }
+
+    .copyTab {
+        cursor: pointer;
+        background: #F9F9F9;
+        border: 1px solid #EDEDED;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 18px;
+        margin: 20px 0 30px 0;
+
+        .link {
+            font-size: 14px;
+            font-weight: 400;
+
+            @media screen and (max-width: 576px) {
+                font-size: 12px;
+            }
+        }
+
+        .alignment {
+            display: flex;
+            align-items: center;
+
+            .copyTxt {
+                margin: 0;
+                font-weight: 600;
+                font-size: 16px;
+                color: #1FC28F;
+                margin-right: 5px;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+    }
+
+    .tabs {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+
+        .tab {
+            background: #F9F9F9;
+            border: 1px solid #EDEDED;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            padding: 18px;
+            font-size: 16px;
+            font-weight: 500;
+            max-width: 540px;
+            width: 100%;
+            margin-bottom: 25px;
+
+            @media screen and (max-width: 768px) {
+                max-width: 100%;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+
+        .mgRight {
+            margin-right: 115px;
+
+            span {
+                @media screen and (max-width: 576px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .btnContainer {
+        .btn {
+            height: 48px;
+            min-width: 300px;
+            text-align: center;
+            border: 1px solid #1FC28F;
+            border-radius: 7px;
+
+            @media screen and (max-width: 768px) {
+                min-width: 100%;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-top: 50px;
+
+        @media screen and (max-width: 992px) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 16px;
+        }
+    }
+
+    .textArea {
+        background: #F9F9F9;
+        border: 1px solid #EDEDED;
+        border-radius: 4px;
+        display: block;
+        width: 100%;
+        padding: 14px 16px;
+        margin-bottom: 10px;
+    }
+
+    .subTxt {
+        font-weight: 400;
+        font-size: 14px;
+
+        @media screen and (max-width: 576px) {
+            font-size: 12px;
+        }
+    }
+}

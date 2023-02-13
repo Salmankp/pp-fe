@@ -1,0 +1,22 @@
+.wrap {
+    padding: 60px 0;
+
+    .heading {
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 32px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 26px;
+        }
+    }
+
+    .directionRow {
+        display: flex;
+        @media screen and (max-width: 992px) {
+            flex-wrap: wrap;
+        }
+    }
+}

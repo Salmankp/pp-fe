@@ -1,0 +1,124 @@
+.wrap {
+  .name {
+    margin-bottom: 0px;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 26px;
+    }
+  }
+
+  .subtext {
+    font-size: 16px;
+    color: #1fc28f;
+    margin-top: 10px;
+  }
+
+  .intro {
+    font-size: 16px;
+    margin-top: 16px;
+
+    @media screen and (max-width: 576px) {
+      font-size: 12px;
+    }
+  }
+
+  .seen {
+    margin-top: 24px;
+    padding-left: 22px;
+    position: relative;
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 576px) {
+      font-size: 12px;
+    }
+
+    &::before {
+      content: '';
+      width: 11px;
+      height: 11px;
+      position: absolute;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-color: rgb(197, 194, 194);
+    }
+  }
+
+  .seen.active {
+    &::before {
+      background-color: #1fc28f;
+    }
+  }
+
+  .like_socialLinks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    column-gap: 20px;
+
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+      row-gap: 20px;
+      align-items: flex-start;
+    }
+
+    .like_dislike {
+      width: 100%;
+      display: flex;
+      column-gap: 28px;
+
+      .like {
+        border-radius: 4px;
+        max-width: 127px;
+        width: 100%;
+        border: 0px;
+        height: 48px;
+        background-color: #1fde001a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 12px;
+        color: #1fde00;
+
+        @media screen and (max-width: 576px) {
+          max-width: 50%;
+          height: 45px;
+        }
+      }
+
+      .dislike {
+        border-radius: 4px;
+        max-width: 127px;
+        width: 100%;
+        border: 0px;
+        height: 48px;
+        background-color: #f309091a;
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        justify-content: center;
+        color: #f30909;
+
+        @media screen and (max-width: 576px) {
+          max-width: 50%;
+          height: 45px;
+        }
+      }
+    }
+
+    .socialLinks {
+      border: 1px solid #c4c4c4;
+      border-radius: 4px;
+      padding: 10px;
+      width: 130px;
+      display: flex;
+      column-gap: 10px;
+    }
+  }
+}

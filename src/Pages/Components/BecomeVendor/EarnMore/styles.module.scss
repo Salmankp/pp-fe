@@ -1,0 +1,77 @@
+.wrap {
+    padding: 150px 0;
+
+    @media screen and (max-width: 991px) {
+        padding: 50px 0;
+    }
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
+
+    .heading {
+        font-weight: 600;
+        line-height: 50px;
+        margin-bottom: 45px;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 26px;
+        }
+    }
+
+    .highlightTxt {
+        color: #1FC28F;
+    }
+
+    .description {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 15px;
+
+        @media screen and (max-width: 991px) {
+            font-size: 14px;
+            line-height: normal;
+        }
+
+        @media screen and (max-width: 567px) {
+            font-size: 12px;
+        }
+    }
+
+    .metaInfo {
+        margin-bottom: 10px;
+    }
+
+    .metaTxt {
+        @media screen and (max-width: 567px) {
+            font-size: 12px;
+        }
+    }
+
+    .bullet {
+        margin-right: 10px;
+        align-self: flex-start;
+    }
+
+    .bgImg {
+        width: 100%;
+
+        @media screen and (max-width: 991px) {
+            height: 300px;
+            width: 600px;
+            padding-top: 20px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

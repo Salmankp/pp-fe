@@ -1,0 +1,143 @@
+.wrap {
+    border-right: 1px solid #dedede;
+    margin-right: 32px;
+    max-width: 620px;
+    width: 100%;
+
+    @media screen and (max-width: 992px) {
+        max-width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #dedede;
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+
+    .topRow {
+        display: flex;
+        margin-right: 20px;
+        column-gap: 60px;
+
+        .box {
+            border: 1px solid #dedede;
+            padding: 15px 20px;
+            border-radius: 7px;
+
+            .nameContainer {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+
+                .name {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #0278db;
+                    margin: 0;
+                }
+
+                .tab {
+                    padding: 4px 8px;
+                    background-color: rgb(219 141 141);
+                    color: #fff;
+                    font-weight: 500;
+                    margin-left: 10px;
+                    border-radius: 7px;
+                    font-size: 14px;
+                }
+
+                .buyBtn {
+                    background-color: #1FC28F;
+                }
+            }
+
+            .amount {
+                margin: 0;
+                font-size: 16px;
+                margin-bottom: 10px;
+
+                span {
+                    font-size: 14px;
+                }
+            }
+
+            .removeBtn {
+                padding: 0;
+                font-size: 14px;
+                color: #0278db;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .btnContainer {
+        margin: 40px 0;
+
+        button {
+            height: 48px;
+            width: 127px;
+
+            @media screen and (max-width: 455px) {
+                width: 90px;
+                height: 40px;
+            }
+        }
+
+        .likeBtn {
+            background: rgba(31, 222, 0, 0.1);
+            border-radius: 4px;
+            margin-right: 10px;
+
+            span {
+                color: #1FDE00;
+                display: inline-block;
+                margin-left: 12px;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        .dislikeBtn {
+            background: rgba(243, 9, 9, 0.1);
+            border-radius: 4px;
+            margin-right: 10px;
+
+            span {
+                color: #F30909;
+                display: inline-block;
+                margin-left: 12px;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+    }
+
+    .txtArea {
+        width: 95%;
+        background-color: #fff;
+        border: 1px solid #EDEDED;
+        border-radius: 4px;
+        padding: 14px 0 0 14px;
+        margin-bottom: 15px;
+
+        @media screen and (max-width: 992px) {
+            width: 100%;
+        }
+    }
+
+    .feedBackBtn {
+        height: 48px;
+        min-width: 170px;
+        border: 1px solid #1FC28F;
+        border-radius: 7px;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+
+        @media screen and (max-width: 576px) {
+            font-size: 14px;
+            height: 45px;
+            min-width: 150px;
+        }
+    }
+
+}

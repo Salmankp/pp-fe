@@ -1,0 +1,178 @@
+.wrap {
+    margin-bottom: 65px;
+
+    .tabs {
+        display: flex;
+        column-gap: 32px;
+        font-size: 18px;
+        margin-bottom: 25px;
+        @media screen and (max-width: 567px) {
+            font-size: 14px;
+        }
+
+        .tab {
+            cursor: pointer;
+        }
+
+        .tab.active {
+            font-weight: 600;
+            padding-left: 22px;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 13px;
+                height: 13px;
+                position: absolute;
+                border-radius: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                background-color: #1fc28f;
+            }
+        }
+    }
+
+    .cardContainer {
+        display: flex;
+        column-gap: 40px;
+
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+
+        @media screen and (max-width: 992px) {
+            column-gap: 20px;
+        }
+
+        .card {
+            border: 1px solid #B8B8B8;
+            border-radius: 13px;
+            width: 33.33%;
+
+            @media screen and (max-width: 768px) {
+                min-width: 100%;
+            }
+
+            .topRow {
+                padding: 25px 32px;
+                border-bottom: 1px solid #B8B8B8;
+
+                @media screen and (max-width: 992px) {
+                    padding: 20px 15px;
+                }
+
+                .title {
+                    font-size: 20px;
+                    font-weight: 500;
+
+                    @media screen and (max-width: 992px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .bottomRow {
+                padding: 35px 32px;
+
+                @media screen and (max-width: 992px) {
+                    padding: 30px 15px;
+                }
+
+                .content {
+                    margin-bottom: 40px;
+
+                    .title {
+                        font-size: 32px;
+                        font-weight: 700;
+                        margin-bottom: 5px;
+
+                        @media screen and (max-width: 992px) {
+                            font-size: 28px;
+                        }
+                    }
+
+                    .counter {
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-left: 10px;
+                        color: #777777;
+                        vertical-align: middle;
+                    }
+                }
+
+                .btn {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    border: 1px solid #1FC28F;
+                    border-radius: 7px;
+                    height: 48px;
+                    margin-bottom: 10px;
+
+                    @media screen and (max-width: 992px) {
+                        font-size: 16px;
+                    }
+                }
+
+                .metaInfo {
+                    color: #777777;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-align: center;
+                    display: block;
+
+                    @media screen and (max-width: 992px) {
+                        font-size: 14px;
+                    }
+                }
+
+                .description {
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 20px;
+                    color: #000;
+
+                    @media screen and (max-width: 992px) {
+                        font-size: 14px;
+                    }
+                }
+
+                .list {
+                    background-color: #f9f9f9;
+                    border: 1px solid #EDEDED;
+                    border-radius: 4px;
+                    padding: 10px 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 25px;
+
+                    .txt {
+                        color: #7B7B7B;
+                        font-size: 14px;
+                    }
+
+                    .counterContainer {
+                        background: #1FC28F;
+                        border-radius: 24px;
+                        height: 32px;
+                        width: 32px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .count {
+                            color: #fff;
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

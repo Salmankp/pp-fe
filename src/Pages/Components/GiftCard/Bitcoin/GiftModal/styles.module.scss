@@ -1,0 +1,162 @@
+.buy_modal {
+    :global {
+        .modal-dialog {
+            max-width: 720px;
+            width: 100%;
+
+            @media screen and (max-width: 768px) {
+                max-width: 500px;
+                width: 100%;
+            }
+
+            @media screen and (max-width: 576px) {
+                max-width: 400px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            @media screen and (max-width: 400px) {
+                max-width: 320px;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .modal-content {
+            border-radius: 20px;
+        }
+
+        .modal-body {
+            padding: 0px;
+        }
+    }
+
+    .wrap {
+        padding: 55px;
+
+        @media screen and (max-width: 768px) {
+            padding: 30px;
+        }
+
+        @media screen and (max-width: 400px) {
+            padding: 20px;
+        }
+
+        .cross {
+            position: absolute;
+            top: 32px;
+            right: 32px;
+            cursor: pointer;
+        }
+
+        .heading {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .field {
+            position: relative;
+            margin-bottom: 20px;
+
+            input {
+                height: 48px;
+                padding-left: 20px;
+                border: 1px solid #ededed;
+                border-radius: 4px;
+                background: #f9f9f9;
+                width: 100%;
+
+                @media screen and (max-width: 400px) {
+                    font-size: 12px;
+                }
+            }
+
+            button {
+                right: 8px;
+                top: 50%;
+                transform: translateY(-50%);
+                position: absolute;
+                border: 0px;
+                background-color: transparent;
+
+            }
+        }
+
+        .metaInfo {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            display: block;
+
+            @media screen and (max-width: 400px) {
+                font-size: 12px;
+            }
+        }
+
+        .alignment {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+
+            .outer {
+                display: flex;
+                align-items: center;
+
+                .counter {
+                    height: 42px;
+                    width: 42px;
+                    border: 1px solid #B8B8B8;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #1FC28F;
+                    margin-right: 20px;
+                }
+
+                .txt {
+                    font-weight: 600;
+                    font-size: 16px;
+                    display: block;
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .outerAlignment {
+            display: flex;
+            align-items: center;
+            margin: 0 0 25px 0;
+
+            .btn {
+                margin-right: 30px;
+            }
+
+            .heading {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        display: block;
+    }
+
+    .emptyCard {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+}

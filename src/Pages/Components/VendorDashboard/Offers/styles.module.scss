@@ -1,0 +1,68 @@
+.wrap {
+    margin-bottom: 60px;
+
+    .topRow {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 992px) {
+                font-size: 18px;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 16px;
+            }
+        }
+
+        .tabs {
+            display: flex;
+            column-gap: 32px;
+            font-size: 18px;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 992px) {
+                font-size: 16px;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 14px;
+            }
+
+            .tab {
+                cursor: pointer;
+            }
+
+            .tab.active {
+                font-weight: 600;
+                padding-left: 22px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    width: 13px;
+                    height: 13px;
+                    position: absolute;
+                    border-radius: 50%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    background-color: #1fc28f;
+                }
+            }
+        }
+    }
+
+    .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+}

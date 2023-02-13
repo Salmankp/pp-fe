@@ -1,0 +1,113 @@
+.wrap {
+  margin: 32px 0;
+
+  .transactionContainer {
+    border: 1px solid #b8b8b8;
+    border-radius: 13px;
+    padding: 24px;
+
+    @media screen and (max-width: 768px) {
+      padding: 15px;
+    }
+
+    .title {
+      color: #353535;
+      font-weight: 500;
+      font-size: 24px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 22px;
+      }
+
+      @media screen and (max-width: 400px) {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+
+    .noRecord {
+      padding: 50px 0 70px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .txt {
+        margin: 20px 0 0 0;
+        color: #7b7b7b;
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+
+    .table {
+      margin-top: 20px;
+      border-radius: 10px;
+
+      .title {
+        color: #353535;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+        }
+
+        @media screen and (max-width: 576px) {
+          font-size: 14px;
+        }
+        @media screen and (max-width: 400px) {
+          font-size: 12px;
+        }
+      }
+
+      .tbodyScroll {
+        height: 500px;
+        overflow-y: auto;
+      }
+
+      .data {
+        td {
+          color: #353535;
+          font-weight: 400;
+          font-size: 16px;
+
+          @media screen and (max-width: 768px) {
+            font-size: 13px;
+          }
+
+          @media screen and (max-width: 576px) {
+            font-size: 11px;
+          }
+        }
+      }
+
+      .data:nth-child(even) {
+        background: #f9f9f9;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  :global {
+    .table > :not(:first-child) {
+      border-top: 1px solid #fff;
+    }
+
+    table {
+      tr {
+        border-style: hidden;
+        overflow-x: scroll;
+        th,
+        td {
+          padding: 5px 24px;
+
+          @media screen and (max-width: 768px) {
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+  }
+}

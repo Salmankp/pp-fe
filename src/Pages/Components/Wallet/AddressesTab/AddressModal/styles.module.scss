@@ -1,0 +1,161 @@
+.modal {
+    :global {
+        .modal-dialog {
+            max-width: 700px;
+            width: 100%;
+
+            @media screen and (max-width: 768px) {
+                max-width: 550px;
+            }
+
+            @media screen and (max-width: 576px) {
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            @media screen and (max-width: 576px) {
+                max-width: 330px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .modal-content {
+            border-radius: 20px;
+        }
+
+        .modal-body {
+            padding: 0;
+        }
+    }
+}
+
+.wrap {
+    padding: 45px 53px;
+
+    @media screen and (max-width: 768px) {
+        padding: 30px;
+    }
+
+    @media screen and (max-width: 576px) {
+        padding: 20px;
+    }
+
+    .cross {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        cursor: pointer;
+    }
+
+    .heading {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 400px) {
+            font-size: 16px;
+        }
+    }
+
+    .priceinfo {
+        margin-bottom: 10px;
+
+        .subtitle {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 18px;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 16px;
+            }
+
+            @media screen and (max-width: 400px) {
+                font-size: 14px;
+            }
+        }
+
+        .subTxt {
+            color: #CACACA;
+            font-size: 16px;
+            font-weight: 600;
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .outer {
+        padding: 35px 0;
+        border-bottom: 1px dashed #CACACA;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media screen and (max-width: 576px) {
+                display: block;
+            }
+
+            .title {
+                font-size: 16px;
+                font-weight: 600;
+
+
+            }
+
+            .description {
+                color: #7B7B7B;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .link {
+                background: #F9F9F9;
+                border: 1px solid #EDEDED;
+                border-radius: 4px;
+                cursor: pointer;
+                padding: 14px 16px;
+                @media screen and (max-width: 576px) {
+                    margin-top: 10px;
+                }
+
+                .linktxt {
+                    display: inline-block;
+                    margin-right: 10px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #7B7B7B;
+                    @media screen and (max-width: 576px) {
+                        margin-top: 12px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+}

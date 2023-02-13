@@ -1,0 +1,243 @@
+body {
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #353535;
+  margin: 0px;
+  line-height: normal;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+select,
+input,
+button {
+  font-family: "Montserrat";
+}
+
+::placeholder {
+  color: #353535;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+select,
+input,
+textarea {
+  outline-color: #1fc28f;
+}
+
+ul,
+li {
+  padding: 0px;
+  margin: auto;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  line-height: normal;
+}
+
+.container {
+  max-width: 1466px;
+  margin: auto;
+  padding: 0px 50px;
+}
+
+button {
+  border: 1px solid;
+  overflow: hidden;
+  position: relative;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.modal-backdrop {
+  background: rgba(55, 55, 55, 0.56);
+  backdrop-filter: blur(6px);
+}
+
+.modal-backdrop.show {
+  opacity: 1;
+}
+
+.dropdown-toggle.btn {
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.dropdown-toggle.btn::after {
+  display: none;
+}
+
+.dropdown-menu {
+  padding: 0;
+}
+
+.dropdown-container {
+  border: 1px solid #ededed !important;
+  background-color: #f9f9f9 !important;
+  height: 48px !important;
+  padding: 0px 1rem !important;
+  border-radius: 4px !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+.dropdown-container .dropdown-menu {
+  width: 99% !important;
+  margin-top: 0.2rem !important;
+}
+
+.dropdown-container .dropdown-menu .bank-btn {
+  padding: 10px 5px;
+  color: #1fc28f;
+  font-weight: 500;
+}
+
+.dropdown-container .dropdown-menu .bank-btn:active {
+  padding: 10px 5px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.dropdown-container .dropdown-menu .dropdown-item:active {
+  background-color: #1fc28f !important;
+}
+
+.dropdown-container::after {
+  content: url("./assets/images/arrowDownIcon.svg");
+  position: absolute;
+  right: 3%;
+  top: 28%;
+}
+
+.dropdown-container .dropdown-toggle {
+  width: 98% !important;
+  background: transparent !important;
+  text-align: left !important;
+  color: #7b7b7b !important;
+}
+.dropdown-container .dropdown-toggle::placeholder {
+  color: #7b7b7b !important;
+}
+.dropdown-container .dropdown-toggle:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.dropdown-container:focus-visible {
+  outline: #1fc28f !important;
+  border: 2px solid #1fc28f !important;
+}
+
+.dropdown-container:visited {
+  outline: #1fc28f !important;
+  border: 2px solid #1fc28f !important;
+}
+
+.btn-secondary:focus {
+  box-shadow: none !important;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.react-select .react-select__control {
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+
+.table-responsive {
+  height: 400px;
+  overflow: scroll;
+}
+
+/* // ============== Add Personal Account Modal =============== // */
+.bold-text {
+  padding: 1rem 0rem;
+}
+.pak-flag {
+  display: flex;
+  align-items: center;
+}
+.pak-text span {
+  font-weight: 500;
+}
+.label-text {
+  font-weight: 500;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+.info-wrapper {
+  font-size: 14px;
+  color: #b8b8b8;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+.input-fieldbank {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+}
+.textarea-wrapper {
+  width: 100%;
+  height: 65px;
+  padding: 0.5rem;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+}
+.backbtn {
+  padding: 10px 15px;
+  margin-top: 1rem;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+.nextBtn {
+  padding: 10px 15px;
+  margin-top: 1rem;
+  background: #1fc28f;
+  color: #fff;
+  border-radius: 5px;
+}
+.p-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile-icon {
+  width: 45px;
+}
+.btnWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ================================================================= */
+
+@media screen and (max-width: 1400px) {
+  .container {
+    padding: 0px 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0px 20px;
+  }
+}

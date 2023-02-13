@@ -1,0 +1,31 @@
+.wrap {
+    margin: 40px auto;
+
+    .pagination {
+        justify-content: center;
+
+        .item {
+            margin: 0;
+
+            a {
+                color: #353535;
+                font-weight: 500;
+            }
+
+            :hover,
+            :focus,
+            :active {
+                background-color: #1fc28f;
+                color: #fff;
+            }
+
+        }
+
+        .active {
+            a {
+                background-color: #1fc28f;
+                color: #fff;
+            }
+        }
+    }
+}

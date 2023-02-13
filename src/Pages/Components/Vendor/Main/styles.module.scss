@@ -1,0 +1,18 @@
+.wrap {
+  padding: 45px 0px;
+  display: flex;
+  column-gap: 40px;
+  min-height: 100vh;
+
+  @media screen and (max-width: 992px) {
+    flex-wrap: wrap;
+  }
+
+  .userProfile {
+    width: calc(100% - 380px);
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+  }
+}

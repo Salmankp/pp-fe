@@ -1,0 +1,112 @@
+.wrap {
+    .btnContainer {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 26px;
+
+        @media screen and (max-width: 576px) {
+            margin-bottom: 10px;
+        }
+
+        .markBtn {
+            color: #0278DB;
+            font-size: 16px;
+            font-weight: 500;
+
+            @media screen and (max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .alignment {
+        display: flex;
+        justify-content: space-between;
+        background: rgba(174, 174, 174, 0.08);
+        border-radius: 4px;
+        padding: 20px;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 576px) {
+            display: block;
+        }
+
+        @media screen and (max-width: 400px) {
+            padding: 10px;
+        }
+
+        .directionCol {
+            display: flex;
+            align-items: center;
+
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
+
+            .title {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0 65px 0 0;
+
+                @media screen and (max-width: 992px) {
+                    font-size: 16px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 14px;
+                }
+            }
+
+            .description {
+                font-size: 16px;
+                font-weight: 400;
+                margin: 0;
+
+                @media screen and (max-width: 992px) {
+                    font-size: 14px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .time {
+        font-size: 14px;
+        font-weight: 400;
+
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+            align-self: center;
+        }
+    }
+
+    .align {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+
+        img {
+            @media screen and (max-width: 992px) {
+                height: 15px;
+                width: 15px;
+            }
+        }
+
+        .msgTxt {
+            font-size: 16px;
+            font-weight: 500;
+            margin-left: 4px;
+
+            @media screen and (max-width: 992px) {
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 992px) {
+                font-size: 12px;
+            }
+        }
+    }
+}

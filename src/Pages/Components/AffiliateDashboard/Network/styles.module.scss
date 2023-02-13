@@ -1,0 +1,236 @@
+.wrap {
+    .title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    .sectionContainer {
+        display: flex;
+        column-gap: 100px;
+        margin-bottom: 60px;
+
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            width: 50%;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .title {
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+
+            .description {
+                color: #2C2C2C;
+                font-size: 16px;
+                line-height: 20px;
+
+                @media screen and (max-width: 992px) {
+                    font-size: 14px;
+                }
+            }
+
+            .copyTab {
+                cursor: pointer;
+                background: #F9F9F9;
+                border: 1px solid #EDEDED;
+                border-radius: 4px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 14px 18px;
+                margin: 10px 0;
+
+                .link {
+                    font-size: 14px;
+                    font-weight: 400;
+
+                    @media screen and (max-width: 992px) {
+                        font-size: 12px;
+                    }
+                }
+
+                .alignment {
+                    display: flex;
+                    align-items: center;
+
+                    .copyTxt {
+                        margin: 0;
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #1FC28F;
+                        margin-right: 5px;
+
+                        @media screen and (max-width: 992px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+            }
+
+            .infoTxt {
+                font-size: 16px;
+                font-weight: 400;
+                margin-bottom: 20px;
+
+                @media screen and (max-width: 992px) {
+                    font-size: 14px;
+                }
+            }
+
+            .linkTxt {
+                color: #0278db;
+                cursor: pointer;
+
+                @media screen and (max-width: 992px) {
+                    font-size: 14px;
+                }
+            }
+
+            .heading {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                display: block;
+
+                @media screen and (max-width: 992px) {
+                    font-size: 14px;
+                }
+            }
+
+            .socialLink {
+                border: 1px solid #C4C4C4;
+                border-radius: 4px;
+                padding: 10px;
+                max-width: 150px;
+                width: 100%;
+            }
+
+            .outer {
+                margin: 40px 0;
+                display: flex;
+                align-items: center;
+
+                @media screen and (max-width: 768px) {
+                    margin: 20px 0;
+                }
+
+                .content {
+                    margin-left: 26px;
+
+                    @media screen and (max-width: 992px) {
+                        font-size: 14px;
+                    }
+
+                    .txtBold {
+                        font-weight: 600;
+                    }
+
+                    .btnTxt {
+                        font-size: 16px;
+                        color: #0278db;
+                        font-weight: 400;
+                        cursor: pointer;
+
+                        @media screen and (max-width: 992px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+    }
+
+    .detailCard {
+        display: flex;
+        column-gap: 50px;
+        margin-bottom: 65px;
+
+        @media screen and (max-width: 768px) {
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+
+        .card {
+            width: 50%;
+            border: 1px solid #B8B8B8;
+            border-radius: 13px;
+
+            @media screen and (max-width: 768px) {
+                min-width: 100%;
+            }
+
+            .topRow {
+                padding: 25px 32px;
+                border-bottom: 1px solid #B8B8B8;
+
+                @media screen and (max-width: 992px) {
+                    padding: 20px 15px;
+                }
+
+                span {
+                    font-size: 20px;
+                    font-weight: 500;
+
+                    @media screen and (max-width: 992px) {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .bottomRow {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 16px 32px 50px 32px;
+
+                @media screen and (max-width: 992px) {
+                    padding: 20px 15px;
+                }
+
+                .title {
+                    font-size: 20px;
+                    font-weight: 400;
+                    margin-bottom: 28px;
+
+                    @media screen and (max-width: 992px) {
+                        font-size: 16px;
+                        margin-bottom: 22px;
+                    }
+                }
+
+                .counter {
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 5px;
+
+                    @media screen and (max-width: 992px) {
+                        font-size: 18px;
+                    }
+                }
+
+                .num {
+                    font-size: 16px;
+                    font-weight: 400;
+
+                    @media screen and (max-width: 992px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,157 @@
+.wrap {
+    width: 70%;
+
+    @media screen and (max-width: 992px) {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 35px;
+        padding-left: 32px;
+
+        @media screen and (max-width: 992px) {
+            padding-left: 0;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 26px;
+        }
+    }
+
+    .alignment {
+        display: flex;
+        align-items: center;
+        padding-left: 32px;
+        @media screen and (max-width: 992px) {
+            padding-left: 0;
+        }
+        .authIcon {
+            margin-right: 30px;
+            align-self: flex-start;
+
+            @media screen and (max-width: 576px) {
+                margin-right: 10px;
+                height: 40px;
+            }
+        }
+
+        .subtitle {
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: 1400px) {
+                font-size: 30px;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 24px;
+            }
+
+            @media screen and (max-width: 400px) {
+                font-size: 20px;
+            }
+        }
+
+        .description {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .viewBtn {
+            padding: 0;
+            height: 48px;
+            min-width: 175px;
+            border: 1px solid #1FC28F;
+            border-radius: 7px;
+            font-size: 16px;
+            font-weight: 500;
+
+            @media screen and (max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .outer {
+        margin: 50px 0;
+        padding-left: 32px;
+
+        @media screen and (max-width: 576px) {
+            margin: 20px 0;
+        }
+
+        .infoTxt {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            margin-bottom: 25px;
+
+            @media screen and (max-width: 1400px) {
+                font-size: 18px;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+            }
+
+            @media screen and (max-width: 576px) {
+                font-size: 12px;
+            }
+        }
+
+        .lgBtn {
+            height: 48px;
+            min-width: 360px;
+            background: #1FC28F;
+            border: 1px solid #1FC28F;
+            border-radius: 7px;
+            font-size: 16px;
+            font-weight: 500;
+
+            @media screen and (max-width: 576px) {
+                min-width: 100%;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .border {
+        border-bottom: 1px solid #ededed
+    }
+
+    .bottomTxt {
+        padding-left: 32px;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 32px;
+
+        @media screen and (max-width: 1400px) {
+            font-size: 18px;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+
+    .blueBtn {
+        padding: 0;
+        color: #0278DB;
+        font-weight: 600;
+    }
+
+}

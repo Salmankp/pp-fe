@@ -1,0 +1,177 @@
+.wrap {
+    margin: 150px 0;
+
+    @media screen and (max-width: 991px) {
+        margin: 50px 0;
+    }
+
+    .heading {
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 32px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 26px;
+        }
+    }
+
+    .feedbackOuter {
+        display: flex !important;
+        max-width: 780px;
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+        column-gap: 130px;
+
+        @media screen and (max-width: 991px) {
+            display: block !important;
+        }
+
+        .profileContainer {
+            max-width: 180px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: 991px) {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            img {
+                height: 115px;
+                width: 115px;
+
+                @media screen and (max-width: 991px) {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+            .name {
+                margin: 15px 0 10px 0;
+                font-size: 18px;
+                font-weight: 500;
+                margin-bottom: 11px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                color: #4F4F4F;
+            }
+
+            .description {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+
+        .quoteImg {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 40px;
+
+            @media screen and (max-width: 991px) {
+                margin-bottom: 0;
+                height: 40px;
+                width: 40px;
+                position: relative;
+                right: 200px;
+            }
+
+            @media screen and (max-width: 567px) {
+                height: 30px;
+                width: 30px;
+                position: relative;
+                right: 50px;
+            }
+        }
+
+        .txt {
+            color: #828282;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 24px;
+            margin: 0;
+
+            @media screen and (max-width: 991px) {
+                padding: 20px 50px 0;
+                text-align: center;
+            }
+
+            @media screen and (max-width: 567px) {
+                padding: 20px 20px 0;
+            }
+        }
+    }
+
+    :global {
+        .slick-arrow {
+            margin-left: -40px;
+
+            @media screen and (max-width: 1400px) {
+                margin-left: 0;
+            }
+            @media screen and (max-width: 991px) {
+                margin-top: 100px;
+            }
+            @media screen and (max-width: 567px) {
+                margin-top: 50px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .slick-arrow.slick-next {
+                transform: rotate(180deg);
+                margin: 80px 0 0 0;
+            }
+
+            .slick-arrow.slick-prev {
+                margin: 115px 0 0 0;
+            }
+        }
+        .slick-prev {
+            &:before {
+                content: url('../../../../assets/images/darkLeftArrow.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+                @media screen and (max-width: 768px) {
+                    content: url('../../../../assets/images/right.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+        }
+
+        .slick-next {
+            &:before {
+                content: url('../../../../assets/images/darkRightArrow.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+                @media screen and (max-width: 768px) {
+                    content: url('../../../../assets/images/right.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+        }
+
+        .slick-prev,
+        .slick-next {
+            height: 75px;
+            width: 75px;
+        }
+    }
+}

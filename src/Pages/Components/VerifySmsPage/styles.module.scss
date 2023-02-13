@@ -1,0 +1,16 @@
+.fieldWrap {
+    margin-bottom: 24px;
+    text-align: left;
+    input {
+      width: 100%;
+      border: 1px solid #cacaca;
+      border-radius: 4px;
+      padding: 14px 10px;
+      box-sizing: border-box;
+      font-size: 14px;
+      height: 48px;
+      &::placeholder {
+        color: #939393;
+      }
+    }
+  }

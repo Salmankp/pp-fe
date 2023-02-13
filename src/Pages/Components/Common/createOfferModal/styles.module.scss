@@ -1,0 +1,166 @@
+.dispute_modal {
+    :global {
+        .modal-dialog {
+            max-width: 900px;
+            width: 100%;
+
+            @media screen and (max-width: 992px) {
+                max-width: 700px;
+            }
+
+            @media screen and (max-width: 768px) {
+                max-width: 550px;
+            }
+
+            @media screen and (max-width: 576px) {
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            @media screen and (max-width: 400px) {
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .modal-content {
+            border-radius: 20px;
+        }
+
+        .modal-body {
+            padding: 0px;
+        }
+    }
+
+    .wrap {
+        padding: 35px 50px 60px 50px;
+
+        @media screen and (max-width: 768px) {
+            padding: 50px 30px;
+        }
+
+        @media screen and (max-width: 576px) {
+            padding: 30px 20px;
+        }
+
+        .cross {
+            position: absolute;
+            top: 32px;
+            right: 32px;
+            cursor: pointer;
+        }
+
+        .heading {
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 40px;
+
+            @media screen and (max-width: 400px) {
+                font-size: 20px;
+            }
+        }
+
+        .subHeading {
+            font-size: 18px;
+            font-weight: 600;
+
+            @media screen and (max-width: 400px) {
+                font-size: 16px;
+            }
+        }
+
+        .tagsContainer {
+            margin: 20px 0;
+
+            .nameContainer {
+                margin-right: 80px;
+            }
+
+            .title {
+                background-color: #f9f9f9;
+                padding: 10px 20px;
+                margin-bottom: 25px;
+
+                @media screen and (max-width: 576px) {
+                    padding: 5px 10px;
+                    max-width: 150px;
+                }
+
+
+                .txt {
+                    font-size: 16px;
+                    font-weight: 400;
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 12px;
+                    }
+
+                    @media screen and (max-width: 400px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .description {
+                font-size: 16px;
+                font-weight: 500;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 12px;
+                }
+
+                @media screen and (max-width: 400px) {
+                    font-size: 10px;
+                }
+            }
+
+        }
+
+        .alignment {
+            display: flex;
+            align-items: center;
+
+            @media screen and (max-width: 400px) {
+                display: block;
+            }
+        }
+
+        .setWidth {
+            max-width: 250px;
+            width: 100%;
+            margin-right: 60px;
+        }
+
+        .mgBottom {
+            margin-bottom: 40px;
+
+            @media screen and (max-width: 576px) {
+                margin-bottom: 0;
+            }
+        }
+
+        .btnContainer {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 30px;
+
+            .btn_start {
+                height: 48px;
+                min-width: 200px;
+                background-color: #52D1AC;
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: 400;
+
+                @media screen and (max-width: 400px) {
+                    height: 45px;
+                    min-width: 150px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+}

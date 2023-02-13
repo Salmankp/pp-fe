@@ -1,0 +1,36 @@
+.dropDownWrapper{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(117, 117, 117, 0.25);
+    border-radius: 4px;
+    position: absolute;
+    top: 37px;
+    right: 0px;
+    width: 300px;
+    z-index:1000;
+    .dropdownHeader{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 20px;
+        .title{
+            font-size: 18px;
+        }
+    }
+    .list{
+        list-style: none;
+        .listItems{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 14px;
+            span{
+                white-space: nowrap;
+            }
+            &:hover{
+                background: #F3F3F3;
+            }
+        }
+    }
+}

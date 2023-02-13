@@ -1,0 +1,54 @@
+.outer {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    max-width: 340px;
+    width: 100%;
+
+    @media screen and (max-width: 576px) {
+        max-width: 100%
+    }
+}
+
+.icon {
+    height: 28px;
+    width: 28px;
+    margin-right: 13px;
+}
+
+.selectTxt {
+    font-weight: 400;
+    font-size: 16px;
+
+    @media screen and (max-width: 576px) {
+        font-size: 14px;
+    }
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: flex-end;
+
+    @media screen and (max-width: 576px) {
+        justify-content: center;
+    }
+
+    .viewBtn {
+        height: 48px;
+        width: 270px;
+        text-align: center;
+        border: 1px solid #1FC28F;
+        border-radius: 7px;
+        color: #353535;
+        font-size: 16px;
+        font-weight: 500;
+        align-self: flex-end;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 576px) {
+            font-size: 14px;
+        }
+    }
+}

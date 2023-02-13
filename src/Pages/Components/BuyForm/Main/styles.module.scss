@@ -1,0 +1,26 @@
+.wrap {
+  .btnWrap {
+    margin-top: 18px;
+    text-align: right;
+    margin-bottom: 100px;
+
+    @media screen and (max-width: 576px) {
+      margin-bottom: 30px;
+    }
+
+    .reportBtn {
+      border-radius: 4px;
+      height: 48px;
+      min-width: 170px;
+      background-color: white;
+      border: 1px solid #1fc28f;
+      font-size: 16px;
+      font-weight: 500;
+
+      @media screen and (max-width: 576px) {
+        font-size: 14px;
+        min-width: 100%;
+      }
+    }
+  }
+}

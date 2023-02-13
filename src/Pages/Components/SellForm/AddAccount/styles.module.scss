@@ -1,0 +1,104 @@
+.modal {
+  :global {
+    .modal-dialog {
+      max-width: 785px;
+      width: 100%;
+    }
+    .modal-content {
+      border-radius: 20px;
+    }
+    .modal-body {
+      padding: 0px;
+    }
+  }
+  .wrap {
+    padding: 50px 90px;
+    .cross {
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      cursor: pointer;
+    }
+    .heading {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .content {
+      .formWrap {
+        margin: 70px 0px 80px;
+        .inputs {
+          display: flex;
+          column-gap: 200px;
+          .radio {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+
+            input {
+              display: none;
+            }
+            input:checked ~ label {
+              .circle {
+                position: relative;
+                background-color: #1fc28f;
+                &::before {
+                  content: "";
+                  width: 7px;
+                  height: 7px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  background-color: white;
+                  border-radius: 50%;
+                }
+              }
+            }
+            label {
+              display: flex;
+              cursor: pointer;
+              align-items: center;
+              .circle {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1px solid #1fc28f;
+                margin-right: 15px;
+              }
+            }
+          }
+        }
+        .selectWrap {
+          margin-top: 25px;
+          .label {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .btnWrap {
+        column-gap: 34px;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        button {
+          width: 100%;
+          height: 48px;
+          background-color: white;
+          border: 1px solid #cacaca;
+          border-radius: 4px;
+          font-size: 16px;
+          max-width: 265px;
+        }
+        button.active {
+          background-color: #1fc28f;
+          border: 0px;
+        }
+      }
+    }
+  }
+}

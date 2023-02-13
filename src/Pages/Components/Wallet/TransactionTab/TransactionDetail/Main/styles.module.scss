@@ -1,0 +1,61 @@
+.wrap {
+    padding: 60px 0;
+
+    .heading {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 32px;
+        }
+
+        @media screen and (max-width: 576px) {
+            font-size: 26px;
+        }
+    }
+
+    .tabs {
+        display: flex;
+        column-gap: 32px;
+        font-size: 18px;
+
+        .tab {
+            cursor: pointer;
+            text-decoration: none;
+            color: #2C2C2C;
+
+            @media screen and (max-width: 1200px) {
+                font-size: 16px;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 12px;
+            }
+        }
+
+        .tab.active {
+            font-weight: 600;
+            padding-left: 22px;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 13px;
+                height: 13px;
+                position: absolute;
+                border-radius: 50%;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                background-color: #1fc28f;
+            }
+        }
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+    }
+
+}

@@ -1,0 +1,121 @@
+.modal {
+    :global {
+        .modal-dialog {
+            max-width: 800px;
+            width: 100%;
+
+            @media screen and (max-width: 992px) {
+                max-width: 700px;
+            }
+
+            @media screen and (max-width: 768px) {
+                max-width: 500px;
+            }
+            @media screen and (max-width: 576px) {
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            @media screen and (max-width: 400px) {
+                max-width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .modal-content {
+            border-radius: 20px;
+        }
+
+        .modal-body {
+            padding: 0px;
+        }
+    }
+}
+
+.wrap {
+    padding: 70px 50px;
+
+    @media screen and (max-width: 768px) {
+        padding: 50px 30px;
+    }
+
+    .cross {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        cursor: pointer;
+    }
+
+    .heading {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 35px;
+    }
+
+    .description {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .outer {
+        display: flex;
+        align-items: center;
+        background-color: #EDEDED;
+        padding: 10px 30px;
+        margin-top: 15px;
+        margin-bottom: 70px;
+        cursor: pointer;
+
+        .txtBlock {
+            margin-left: 20px;
+
+            h3 {
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            span {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .btnContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        .cancelBtn {
+            height: 48px;
+            min-width: 260px;
+            background-color: #EDEDED;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 400;
+
+            @media screen and (max-width: 768px) {
+                min-width: 100%;
+            }
+        }
+
+        .continueBtn {
+            height: 48px;
+            min-width: 260px;
+            background-color: #52D1AC;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 400;
+            @media screen and (max-width: 768px) {
+                min-width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.wrap {
+  .heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .receiptContainer {
+    background: #f9f9f9;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 70px 0;
+
+    @media screen and (max-width: 768px) {
+      margin: 30px 0;
+    }
+
+    @media screen and (max-width: 400px) {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    .directionRow {
+      cursor: pointer;
+    }
+  }
+
+  .directionRow {
+    display: flex;
+    align-items: center;
+  }
+
+  .imgContainer {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #1fc28f;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .txt {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 0 10px;
+  }
+}

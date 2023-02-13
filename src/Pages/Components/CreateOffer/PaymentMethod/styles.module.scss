@@ -1,0 +1,333 @@
+.wrap {
+  width: 100%;
+
+  .paymentWrap {
+    
+    .currency {
+      max-width: 560px;
+
+      @media screen and (max-width: 992px) {
+        max-width: 100%;
+      }
+
+      .chooseCurrency {
+        .cheading {
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 24px;
+
+          @media screen and (max-width: 1400px) {
+            font-size: 16px;
+          }
+
+          @media screen and (max-width: 576px) {
+            font-size: 14px;
+          }
+        }
+
+        .currencyWrap {
+          display: flex;
+          column-gap: 56px;
+          background: #f9f9f9;
+          border: 1px solid #ededed;
+          border-radius: 4px;
+          padding: 33px;
+
+          @media screen and (max-width: 992px) {
+            max-width: 500px;
+          }
+
+          @media screen and (max-width: 576px) {
+            max-width: 100%;
+          }
+
+          @media screen and (max-width: 500px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .currency {
+            width: 125px;
+            height: 90px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 4px;
+            // border: 1px solid #aaaaaa;
+            cursor: pointer;
+
+            @media screen and (max-width: 1400px) {
+              font-size: 16px;
+            }
+
+            @media screen and (max-width: 576px) {
+              font-size: 14px;
+            }
+
+            img {
+              max-width: 32px;
+            }
+          }
+
+          .currency.active {
+            border: 1px solid #1fc28f;
+            background-color: white;
+          }
+        }
+      }
+
+      .sale_buy {
+        margin-top: 70px;
+
+        .sheading {
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 25px;
+
+          @media screen and (max-width: 1400px) {
+            font-size: 16px;
+          }
+
+          @media screen and (max-width: 576px) {
+            font-size: 14px;
+          }
+        }
+
+        .mainWrap {
+          display: flex;
+          column-gap: 50px;
+
+          @media screen and (max-width: 576px) {
+            display: block;
+          }
+
+          .sbwrap {
+            input {
+              opacity: 0;
+            }
+            input:checked ~ label {
+              .circle {
+                &::after {
+                  background-color: #1fc28f;
+                }
+              }
+            }
+
+            label {
+              font-size: 14px;
+              cursor: pointer;
+              display: flex;
+
+              span {
+                display: block;
+                font-size: 18px;
+                font-weight: 600;
+
+                @media screen and (max-width: 1400px) {
+                  font-size: 14px;
+                }
+
+                @media screen and (max-width: 576px) {
+                  font-size: 12px;
+                }
+              }
+
+              .circle {
+                position: relative;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 1px solid #b9b9b9;
+                margin-right: 10px;
+                flex: 0 0 auto;
+
+                @media screen and (max-width: 576px) {
+                  width: 20px;
+                  height: 20px;
+                }
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  width: 13px;
+                  height: 13px;
+                  border-radius: 50%;
+                  background-color: #c4c4c4;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+
+                  @media screen and (max-width: 576px) {
+                    width: 10px;
+                    height: 10px;
+                  }
+                }
+              }
+            }
+            input:disabled~label{
+              cursor: no-drop !important;
+            }
+          }
+        }
+      }
+    }
+
+    .payment {
+      display: flex;
+      flex-direction: column;
+      max-width: 570px;
+      width: 100%;
+
+      @media screen and (max-width: 992px) {
+        max-width: 100%;
+      }
+
+      .pheading {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 25px;
+
+        @media screen and (max-width: 1400px) {
+          font-size: 16px;
+        }
+
+        @media screen and (max-width: 576px) {
+          font-size: 14px;
+        }
+      }
+
+      ul {
+        list-style: none;
+        border: 1px solid #ededed;
+        width: 100%;
+        margin-top: 16px;
+        border-radius: 4px;
+        padding: 24px 24px 20px;
+        .backArrow {
+          margin-bottom: 20px;
+          height: 14px;
+          cursor: pointer;
+        }
+        li {
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+          font-size: 16px;
+          font-weight: 500;
+
+          .icon_title {
+            display: flex;
+            column-gap: 40px;
+
+            .icn {
+              img {
+                max-height: 22px;
+                max-width: 22px;
+              }
+            }
+
+            .title {
+              @media screen and (max-width: 576px) {
+                font-size: 12px;
+              }
+            }
+          }
+
+          .count_arrow {
+            font-size: 14px;
+            color: #1fc28f;
+            display: flex;
+            column-gap: 28px;
+            align-items: center;
+            cursor: pointer;
+          }
+        }
+      }
+      .emptyCard {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+      }
+
+      .curr_wallet {
+        margin-top: 40px;
+        gap: 36px;
+
+        @media screen and (max-width: 992px) {
+          max-width: 100%;
+        }
+
+        .preferred_cur {
+          max-width: 300px;
+          width: 100%;
+          font-size: 14px;
+          position: relative;
+
+          @media screen and (max-width: 992px) {
+            max-width: 50%;
+          }
+
+          @media screen and (max-width: 576px) {
+            max-width: 100%;
+          }
+
+          .title {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 18px;
+            position: relative;
+          }
+          .required {
+            // position: absolute;
+            // top: 25px;
+            color: red;
+            font-size: 12px;
+          }
+        }
+
+        .wallet {
+          max-width: 300px;
+          width: 100%;
+          font-size: 14px;
+          position: relative;
+
+          @media screen and (max-width: 992px) {
+            max-width: 50%;
+          }
+
+          @media screen and (max-width: 576px) {
+            max-width: 100%;
+          }
+
+          .required {
+            position: absolute;
+            top: 25px;
+            color: red;
+            font-size: 12px;
+          }
+
+          .title {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 18px;
+
+            @media screen and (max-width: 576px) {
+              font-size: 14px;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.required {
+  color: red;
+  font-size: 14px;
+}

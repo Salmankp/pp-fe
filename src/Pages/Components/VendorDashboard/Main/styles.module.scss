@@ -1,0 +1,132 @@
+.vendorHeading {
+  color: #1fc28f;
+  text-align: center;
+  padding-top: 1rem;
+}
+.wrapTab {
+  border-radius: 4px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 992px) {
+    width: 100%;
+    border-bottom: 1px solid #ededed;
+    border-right: none;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .tabContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-left: 22px;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 0;
+      padding-left: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+
+    span {
+      margin-left: 15px;
+      color: #2c2c2c;
+      font-size: 18px;
+      font-weight: 500;
+      vertical-align: middle;
+      padding-right: 1rem;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 992px) {
+        font-size: 12px;
+        margin-left: 10px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .tabContainer.active {
+    font-weight: 600;
+    position: relative;
+
+    span {
+      color: #1fc28f;
+    }
+
+    &::before {
+      content: "";
+      width: 4px;
+      height: 34px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-color: #1fc28f;
+    }
+  }
+}
+
+.wrap {
+  padding: 15px 0 65px;
+
+  @media screen and (max-width: 992px) {
+    padding: 40px 0;
+  }
+
+  .heading {
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 32px;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 26px;
+    }
+  }
+
+  .txt {
+    font-size: 20px;
+    font-weight: 400;
+    color: #2c2c2c;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 16px;
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: 12px;
+    }
+  }
+
+  .mgBottom_md {
+    margin-bottom: 20px;
+  }
+
+  .mgBottom_sm {
+    margin-bottom: 10px;
+  }
+
+  .downImg {
+    margin: 0 10px;
+  }
+
+  p {
+    margin: 0;
+  }
+}

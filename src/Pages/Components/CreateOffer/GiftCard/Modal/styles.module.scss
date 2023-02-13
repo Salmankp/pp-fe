@@ -1,0 +1,40 @@
+.pay_modal {
+    margin-left: auto;
+    margin-right: auto;
+  
+    :global {
+      .modal-dialog {
+        max-width: 800px;
+        width: 100%;
+      }
+      .modal-content {
+        border-radius: 20px;
+      }
+      .modal-body {
+        padding: 0px;
+      }
+    }
+  }
+
+  .dragWrapper{
+    .innerItem{
+      border: 1px dashed #1fc28f;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  .currencyBtn{
+    background-color: white;
+    border-radius: 4px;
+    padding: 6px 11px;
+    border: 0px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .imgPreview{
+    height: 200px;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  

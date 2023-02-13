@@ -1,0 +1,137 @@
+.wrap {
+    @media screen and (max-width: 992px) {
+        margin-top: 30px;
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .payments {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 45px;
+        row-gap: 35px;
+        margin: 60px 0;
+
+        @media screen and (max-width: 992px) {
+            margin: 30px 0;
+            column-gap: 40px;
+        }
+        @media screen and (max-width: 567px) {
+            row-gap: 20px;
+        }
+
+        .payment {
+            padding: 30px 5px 20px 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+            border: 1px solid #b8b8b8;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            @media screen and (max-width: 567px) {
+                width: 100%;
+            }
+            img {
+                max-height: 30px;
+                height: 100%;
+            }
+
+            .title {
+                font-size: 16px;
+                font-weight: 500;
+                margin-top: 16px;
+            }
+
+            .subtitle {
+                margin-top: 6px;
+                font-size: 16px;
+                font-weight: 500;
+                color: #929292;
+            }
+        }
+    }
+
+    .accountContainer {
+        border: 1px solid #B8B8B8;
+        border-radius: 10px;
+        padding: 22px 18px;
+        max-width: 260px;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .countContainer {
+        background: #EDEDED;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .counter {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    .offerContainer {
+        margin: 55px 0;
+
+        .offers {
+            display: flex;
+            align-items: center;
+        }
+
+        .tabs {
+            display: flex;
+            column-gap: 32px;
+            font-size: 18px;
+            margin: 22px 0;
+
+            .tab {
+                cursor: pointer;
+            }
+
+            .tab.active {
+                font-weight: 600;
+                padding-left: 22px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    width: 13px;
+                    height: 13px;
+                    position: absolute;
+                    border-radius: 50%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    background-color: #1fc28f;
+                }
+            }
+        }
+
+        .cardContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+    }
+
+    .mgRight {
+        margin-right: 40px;
+    }
+}
